@@ -1,0 +1,6 @@
+<label>Каталог авто</label>
+<div class="catalog">
+  <a class="car" *ngFor="let car of cars" routerLink="car/{{car['id']}}">
+    <p class="brand">Бренд: {{car['brandName']}}</p>
+  </a>
+</div>

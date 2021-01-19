@@ -1,0 +1,21 @@
+label {
+  font-size: 1.5rem;
+  border-left: solid #cccccc 7px;
+  padding-left: 7px;
+}
+
+.catalog {
+  display: flex;
+  flex-direction: column;
+
+  margin: 2vh 0;
+  border-left: dotted #cccccc 7px;
+}
+
+.car {
+  font-size: 1.5rem;
+  color: #4d4d4d;
+  font-weight: 500;
+
+  margin: 1vh 1vw;
+}

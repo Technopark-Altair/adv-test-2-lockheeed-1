@@ -1,0 +1,21 @@
+<label>Добавление авто в каталог</label>
+<div *ngIf="newCar" class="catalog">
+  <div class="row">
+    <p>Бренд</p>
+    <input type="text" [(ngModel)]="newCar.brandName">
+  </div>
+
+  <div class="row">
+    <p>Модель</p>
+    <input type="text" [(ngModel)]="newCar.modelName">
+  </div>
+
+  <div class="row">
+    <p>Цена</p>
+    <input type="number" [(ngModel)]="newCar.priceInRub">
+  </div>
+
+  <button mat-button>Добавить</button>
+
+
+</div>
