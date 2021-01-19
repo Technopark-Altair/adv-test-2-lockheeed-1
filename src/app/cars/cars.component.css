@@ -9,6 +9,7 @@ label {
   flex-direction: column;
 
   margin: 2vh 0;
+  padding-left: 1vw;
   border-left: dotted #cccccc 7px;
 }
 
@@ -17,5 +18,5 @@ label {
   color: #4d4d4d;
   font-weight: 500;
 
-  margin: 1vh 1vw;
+  margin: 1vh 0;
 }

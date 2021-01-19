@@ -1,0 +1,19 @@
+label {
+  font-size: 1.5rem;
+  border-left: solid #cccccc 7px;
+  padding-left: 7px;
+}
+
+.catalog {
+  display: flex;
+  flex-direction: column;
+
+  margin: 2vh 0;
+  padding-left: 1vw;
+  border-left: dotted #cccccc 7px;
+}
+
+.option {
+  font-size: 1.3rem;
+  font-weight: 500;
+}

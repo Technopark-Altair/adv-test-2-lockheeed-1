@@ -1,1 +1,11 @@
-<p>car works!</p>
+<div *ngIf="preview && car"class="preview">
+  <p>Бренд: {{car['brandName']}}</p>
+</div>
+
+<div *ngIf="!preview && car"class="fullview">
+  <label>Бренд: {{car['brandName']}}</label>
+  <div class="catalog">
+    <p class="option">Модель: {{car['modelName']}}</p>
+    <p class="option">Цена: {{car['priceInRub']}}</p>
+  </div>
+</div>
