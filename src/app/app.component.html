@@ -1,4 +1,5 @@
 <header>
   Автосалон
 </header>
-<app-add-car></app-add-car>
+<app-add-car (addedNewCar)="addNewCar($event)" ></app-add-car>
+<app-cars></app-cars>

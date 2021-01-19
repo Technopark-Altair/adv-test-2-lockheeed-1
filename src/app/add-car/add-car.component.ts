@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { Car } from "src/models/car.model";
 
 @Component({
@@ -7,13 +7,15 @@ import { Car } from "src/models/car.model";
   styleUrls: ['./add-car.component.css']
 })
 export class AddCarComponent implements OnInit {
-  newCar: Car;
-
+  newCar: Car = new Car();
+  @Output() addedNewCar = new EventEmitter<Car>();
   constructor() {
   }
 
   ngOnInit(): void {
-    this.newCar = new Car();
   }
 
+  addNewCar() {
+    this.addedNewCar.emit(this.newCar);
+  }
 }

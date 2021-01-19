@@ -18,4 +18,13 @@ export class CarService {
   getAll() {
     return this.cars;
   }
+
+  getCarByID(id: number) {
+    return this.cars.find((el) => el.id === id);
+  }
+
+  addNewCar(car: Car) {
+    car.id = this.cars.length;
+    this.cars.push(car);
+  }
 }
